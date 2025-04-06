@@ -127,6 +127,7 @@ export default function QRScanner() {
           ]);
         });
     } catch (error) {
+      console.log("Error uploading data:", error);
       Alert.alert("Error", "Failed to add Entry!");
     } finally {
       setIsUploading(false);
